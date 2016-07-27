@@ -105,6 +105,26 @@ import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
 import com.toedter.calendar.JMonthChooser;
 import com.toedter.components.JSpinField;
+<<<<<<< HEAD
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreePath;
+import javax.swing.tree.TreeSelectionModel;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.JTextArea;
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.border.BevelBorder;
+
+
+public class main extends JFrame {
+	static String startDir=System.getProperty("user.dir");
+	private JTextField textProject;
+	private JTextField textCategory;
+	private JTextField textSubCat;
+	JLabel lblDirectory = new JLabel("folder path");
+	static String s2;
+	static String value="";
+=======
 
 
 public class main extends JFrame {
@@ -112,6 +132,7 @@ public class main extends JFrame {
 	private JTextField textField_1;
 	private JTextField textField_2;
 	static String s2;
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 static String s3;
 String pr_nm;
 String nm = "sam";
@@ -136,12 +157,21 @@ String nm = "sam";
 	Double sum_tot;
 	Double imp_wt;
 	String alt_sp;
+<<<<<<< HEAD
+	JLabel lblCurrentPath = new JLabel("Default Path>");
+	static JLabel lblDefaultPath = new JLabel("directory path");
+	JComboBox<String> mfg_combo = new JComboBox<String>();
+	 //JPanel panel = nitnew JPanel();
+	static JPanel panel_49 = new JPanel();
+	JPanel panel_1 = new JPanel();
+=======
 	JLabel label = new JLabel("New Project");
 	JComboBox<String> mfg_combo = new JComboBox<String>();
 	 JPanel panel = new JPanel();
 	static JPanel panel_49 = new JPanel();
 	JPanel panel_1 = new JPanel();
 	JPanel panel_2 = new JPanel();
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	JPanel panel_3 = new JPanel();
 	JPanel panel_4 = new JPanel();
 	JPanel panel_5 = new JPanel();
@@ -155,6 +185,10 @@ String nm = "sam";
 	JPanel panel_16 = new JPanel();
 	JPanel panel_15 = new JPanel();
 	JPanel lot = new JPanel();
+<<<<<<< HEAD
+	static JLabel projectPath = new JLabel("Project Path");
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	String catPro;
 	String catPr;
 	String mat;
@@ -303,6 +337,10 @@ String nm = "sam";
 		private JTable table;
 		private JTable table_1;
 		private JTextField textField_13;
+<<<<<<< HEAD
+		private JTree tree;
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		/*public main(InputChecker4 inp)
 		{
 			inpCheck = inp;
@@ -313,7 +351,11 @@ String nm = "sam";
 				
 		setTitle("Space-Time LCA Tool");
 		setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 17));
+<<<<<<< HEAD
+		JPanel panel = new JPanel();
+=======
 		//JPanel panel = new JPanel();
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		getContentPane().add(panel, BorderLayout.CENTER);
 		panel.setBackground(new Color(198,198,198));
 		panel.setLayout(null);
@@ -334,6 +376,42 @@ String nm = "sam";
 		//JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(208,208,208));
 		panel_1.setBorder(new MatteBorder(1, 1, 1, 1,new Color(205,205,205)));
+<<<<<<< HEAD
+		lblCurrentPath.setBounds(11, 12, 110, 19);
+		
+	
+		lblCurrentPath.setFont(new Font("Tahoma", Font.BOLD, 15));
+		
+		textCategory = new JTextField("Product Category");
+		textCategory.setBounds(106, 100, 190, 25);
+		textCategory.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		textCategory.setBackground(new Color(221,221,221));
+		textCategory.setBorder(new MatteBorder(2,2,2,2,new Color(209,209,209)));
+		textCategory.setToolTipText("Enter the product category");
+		textCategory.setForeground(Color.BLACK);
+		textCategory.setEditable(false);
+		textCategory.setColumns(10);
+		textCategory.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent arg1) {
+				textCategory.setEditable(true);
+				textCategory.setText("");
+				}
+		});
+		
+		textSubCat = new JTextField("Add Sub-Categories");
+		textSubCat.setBounds(132, 148, 164, 25);
+		textSubCat.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		textSubCat.setBackground(new Color(221,221,221));
+		textSubCat.setBorder(new MatteBorder(2,2,2,2,new Color(209,209,209)));
+		textSubCat.setToolTipText("Enter Sub-Category");
+		textSubCat.setForeground(Color.BLACK);
+		textSubCat.setEditable(false);
+		textSubCat.setColumns(10);
+		textSubCat.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent arg1) {
+				textSubCat.setEditable(true);
+				textSubCat.setText("");
+=======
 		
 	
 		label.setFont(new Font("Tahoma", Font.BOLD, 15));
@@ -365,10 +443,37 @@ String nm = "sam";
 			public void mouseClicked(MouseEvent arg1) {
 				textField_2.setEditable(true);
 				textField_2.setText("");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				}
 		});
 		
 		
+<<<<<<< HEAD
+		textProject = new JTextField("Project Name");
+		textProject.setBounds(11, 52, 285, 25);
+		textProject.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		textProject.setToolTipText("Enter project name ");
+		textProject.setForeground(Color.BLACK);
+		textProject.setBackground(new Color(221,221,221));
+		textProject.setBorder(new MatteBorder(2,2,2,2,new Color(209,209,209)));
+		textProject.setEditable(false);
+		textProject.setColumns(10);
+		textProject.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent arg1) {
+				textProject.setEditable(true);
+				textProject.setText("");
+				}
+		});
+		
+		JButton btnUploadImage = new JButton("Upload Image");
+		btnUploadImage.setHorizontalAlignment(SwingConstants.LEFT);
+		btnUploadImage.setBounds(431, 52, 121, 30);
+		btnUploadImage.setBackground(new Color(221,221,221));
+		btnUploadImage.setContentAreaFilled(false);
+		btnUploadImage.setOpaque(true);
+		btnUploadImage.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		btnUploadImage.addActionListener(new ActionListener() {
+=======
 		textField = new JTextField("Project Name");
 		textField.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		textField.setToolTipText("Enter project name ");
@@ -390,6 +495,7 @@ String nm = "sam";
 		button_2_1.setOpaque(true);
 		button_2_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		button_2_1.addActionListener(new ActionListener() {
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			public void actionPerformed(ActionEvent e) {
 				 JFileChooser fileChooser = new JFileChooser();
 				 FileNameExtensionFilter filter = new FileNameExtensionFilter("JPG & GIF Images", "jpg", "gif", "png" , "bmp");
@@ -427,6 +533,18 @@ String nm = "sam";
 			}	
 			
 		});
+<<<<<<< HEAD
+		btnUploadImage.setForeground(Color.BLACK);
+		
+		JButton btnUploadImage_1 = new JButton("Upload Image");
+		btnUploadImage_1.setHorizontalAlignment(SwingConstants.LEFT);
+		btnUploadImage_1.setBounds(431, 100, 121, 30);
+		btnUploadImage_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		btnUploadImage_1.setBackground(new Color(221,221,221));
+		btnUploadImage_1.setContentAreaFilled(false);
+		btnUploadImage_1.setOpaque(true);
+		btnUploadImage_1.addActionListener(new ActionListener() {
+=======
 		button_2_1.setForeground(Color.BLACK);
 		
 		JButton button = new JButton("Upload Image");
@@ -435,6 +553,7 @@ String nm = "sam";
 		button.setContentAreaFilled(false);
 		button.setOpaque(true);
 		button.addActionListener(new ActionListener() {
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			public void actionPerformed(ActionEvent e) {
 				 JFileChooser fileChooser = new JFileChooser();
 				 FileNameExtensionFilter filter = new FileNameExtensionFilter("JPG & GIF Images", "jpg", "gif", "png" , "bmp");
@@ -469,6 +588,19 @@ String nm = "sam";
 			}	
 		});
 		
+<<<<<<< HEAD
+		btnUploadImage_1.setForeground(Color.BLACK);
+		
+		
+		JButton btnUploadImage_2 = new JButton("Upload Image");
+		btnUploadImage_2.setHorizontalAlignment(SwingConstants.LEFT);
+		btnUploadImage_2.setBounds(431, 148, 121, 30);
+		btnUploadImage_2.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		btnUploadImage_2.setBackground(new Color(221,221,221));
+		btnUploadImage_2.setContentAreaFilled(false);
+		btnUploadImage_2.setOpaque(true);
+		btnUploadImage_2.addActionListener(new ActionListener() {
+=======
 		button.setForeground(Color.BLACK);
 		
 		
@@ -478,6 +610,7 @@ String nm = "sam";
 		button_1.setContentAreaFilled(false);
 		button_1.setOpaque(true);
 		button_1.addActionListener(new ActionListener() {
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			public void actionPerformed(ActionEvent e) {
 				 JFileChooser fileChooser = new JFileChooser();
 				 FileNameExtensionFilter filter = new FileNameExtensionFilter("JPG & GIF Images", "jpg", "gif", "png" , "bmp");
@@ -513,9 +646,16 @@ String nm = "sam";
 			}	
 		});
 		
+<<<<<<< HEAD
+		btnUploadImage_2.setForeground(Color.BLACK);
+		JPanel display = new JPanel();
+		JButton submit = new JButton("Submit");
+		submit.setBounds(206, 521, 103, 34);
+=======
 		button_1.setForeground(Color.BLACK);
 		JPanel display = new JPanel();
 		JButton submit = new JButton("Submit");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		submit.setBackground(new Color(221,221,221));
 		submit.setContentAreaFilled(false);
 		submit.setOpaque(true);
@@ -524,6 +664,11 @@ String nm = "sam";
 			private String[] args;
 
 			public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
+				new File(lblDefaultPath+"\\"+lblDirectory).mkdir();
+				
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				panel_3.removeAll();
 				panel_3.repaint();
 				panel_3.revalidate();
@@ -532,16 +677,26 @@ String nm = "sam";
 				create_mainfolder();
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection1 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection1 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String insertTableSQL =( "INSERT INTO Project_info"
 							+ "( NAME, Pro_cat,Sub_cat,Proj_image,Procat_image,Subcat_image) VALUES"
 							+ "(?,?,?,?,?,?)");
 					prepared = connection1.prepareStatement(insertTableSQL);
+<<<<<<< HEAD
+					prepared.setString(1, textProject.getText());
+					prepared.setString(2,  textCategory.getText());
+					prepared.setString(3,  textSubCat.getText());
+=======
 					prepared.setString(1, textField.getText());
 					prepared.setString(2,  textField_1.getText());
 					prepared.setString(3,  textField_2.getText());
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					prepared.setBytes(4, pro_image);
 					prepared.setBytes(5, prod_image);
 					prepared.setBytes(6, subcat_image);
@@ -565,7 +720,11 @@ String nm = "sam";
 					try {
 						String sql1 = "SELECT * FROM Project_info  " ;
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+						 Connection connection2 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 						 Connection connection2 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 						 //JOptionPane.showMessageDialog(null, "connection2 successful");
 						
 						prepared = connection2.prepareStatement(sql1);
@@ -592,6 +751,189 @@ String nm = "sam";
 					
 			});
 		submit.setFont(new Font("Tahoma", Font.PLAIN, 14));
+<<<<<<< HEAD
+			panel_1.setLayout(null);
+			
+			JScrollPane scrollPane_40 = new JScrollPane();
+			scrollPane_40.setBounds(11, 202, 502, 308);
+			panel_1.add(scrollPane_40);
+			
+			tree = new JTree();
+			tree.setEditable(true);
+			tree.setForeground(new Color(0, 0, 0));
+			tree.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+			tree.setBackground(Color.LIGHT_GRAY);
+			tree.addTreeSelectionListener(new TreeSelectionListener() {
+				public void valueChanged(TreeSelectionEvent e) {
+					//lblDefaultPath.setText((String) tree.getLastSelectedPathComponent());
+				
+					TreePath treepath=e.getPath();
+					Object elements[]=treepath.getPath();
+					for(int i=0,n=elements.length;i<n;i++)
+					{
+						value += elements[i]+"\\";
+					}
+					value=value.replaceAll("^null","");
+					lblDirectory.setText(String.valueOf(value));
+					//JOptionPane.showMessageDialog(null, value);
+					
+					for(int i=0,n=elements.length;i<n;i++)
+					{
+						value=null;
+					}
+					
+				}
+			});
+			tree.setModel(new DefaultTreeModel(
+				new DefaultMutableTreeNode(textProject.getText()) {
+					{
+					}
+				}
+			));
+			scrollPane_40.setViewportView(tree);
+			panel_1.add(lblCurrentPath);
+			panel_1.add(textProject);
+			panel_1.add(textCategory);
+			panel_1.add(textSubCat);
+			panel_1.add(btnUploadImage);
+			panel_1.add(btnUploadImage_1);
+			panel_1.add(btnUploadImage_2);
+			panel_1.add(submit);
+			
+			JButton btnAddproje = new JButton("add Project");
+			btnAddproje.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+
+					tree.getModel().getRoot();
+					String projectName;
+					String location;						
+					
+					projectName=textProject.getText();
+					location=lblDefaultPath.getText();
+					
+					DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
+					DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+					//model.insertNodeInto(new DefaultMutableTreeNode("another_child"), root, root.getChildCount());
+					
+					
+					
+					DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode)tree.getLastSelectedPathComponent(); 
+					model.insertNodeInto(new DefaultMutableTreeNode(projectName), selectedNode, selectedNode.getChildCount());
+					//root.setUserObject("All Projects");
+					model.nodeChanged(root);
+					new File(lblDefaultPath.getText()+"\\"+lblDirectory.getText()).mkdir();
+					String test=lblDefaultPath.getText()+"\\"+lblDirectory.getText();
+					//TreePath currentSelection = tree.getSelectionPath();
+				//	textLocation.setText(currentSelection.toString());
+				      JOptionPane.showMessageDialog(null,test);
+				    
+					//lblDefaultPath.setText(location+"\\"+projectName);
+				
+				}
+			});
+			btnAddproje.setBounds(300, 54, 121, 23);
+			panel_1.add(btnAddproje);
+			lblDefaultPath.setVerticalAlignment(SwingConstants.TOP);
+			lblDefaultPath.setToolTipText(lblDefaultPath.getText());
+			
+			
+			lblDefaultPath.setFont(new Font("Tahoma", Font.ITALIC, 10));
+			lblDefaultPath.setBounds(118, 17, 303, 19);
+			panel_1.add(lblDefaultPath);
+			
+			JLabel lblChangePath = new JLabel("<Change Path");
+			lblChangePath.addMouseListener(new MouseAdapter() {
+				@Override
+				public void mouseClicked(MouseEvent e) {
+					FileBrowser.main(null);
+				}
+			});
+			lblChangePath.setFont(new Font("Tahoma", Font.BOLD, 14));
+			lblChangePath.setBounds(423, 13, 103, 17);
+			panel_1.add(lblChangePath);
+			
+			JButton btnNewButton_20 = new JButton("add Category");
+			btnNewButton_20.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+
+
+					tree.getModel().getRoot();
+					String projectName;
+					String location;						
+					
+					projectName=textCategory.getText();
+					location=lblDefaultPath.getText();
+					
+					DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
+					DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+					//model.insertNodeInto(new DefaultMutableTreeNode("another_child"), root, root.getChildCount());
+					
+					
+					
+					DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode)tree.getLastSelectedPathComponent(); 
+					model.insertNodeInto(new DefaultMutableTreeNode(projectName), selectedNode, selectedNode.getChildCount());
+					//root.setUserObject("All Projects");
+					//model.nodeChanged(root);
+					new File(lblDefaultPath.getText()+"\\"+lblDirectory.getText()).mkdir();
+					String test=lblDefaultPath.getText()+"\\"+lblDirectory.getText();
+					//new File(lblDefaultPath+"\\"+lblDirectory).mkdir();
+					
+					TreePath currentSelection = tree.getSelectionPath();
+				//	textLocation.setText(currentSelection.toString());
+				      //JOptionPane.showMessageDialog(null,currentSelection);
+				    
+					//lblDefaultPath.setText(location+"\\"+projectName);
+				
+				
+					
+				}
+			});
+			btnNewButton_20.setBounds(302, 102, 119, 23);
+			panel_1.add(btnNewButton_20);
+			
+			JButton btnAdd_3 = new JButton("add Subcategory");
+			btnAdd_3.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+
+
+
+					tree.getModel().getRoot();
+					String projectName;
+					String location;						
+					
+					projectName=textSubCat.getText();
+					location=lblDefaultPath.getText();
+					
+					DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
+					DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+					//model.insertNodeInto(new DefaultMutableTreeNode("another_child"), root, root.getChildCount());
+					
+					
+					
+					DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode)tree.getLastSelectedPathComponent(); 
+					model.insertNodeInto(new DefaultMutableTreeNode(projectName), selectedNode, selectedNode.getChildCount());
+					//root.setUserObject("All Projects");
+					model.nodeChanged(root);
+					new File(lblDefaultPath+"\\"+lblDirectory).mkdir();
+					
+					TreePath currentSelection = tree.getSelectionPath();
+				//	textLocation.setText(currentSelection.toString());
+				      //JOptionPane.showMessageDialog(null,currentSelection);
+				    
+					//lblDefaultPath.setText(location+"\\"+projectName);
+				
+				
+					
+				
+				}
+			});
+			btnAdd_3.setBounds(302, 150, 119, 23);
+			panel_1.add(btnAdd_3);
+			
+			
+			lblDirectory.setBounds(11, 30, 541, 14);
+			panel_1.add(lblDirectory);
+=======
 		
 		
 			panel_2.setBackground(new Color(208,208,208));
@@ -685,6 +1027,7 @@ String nm = "sam";
 			gbc_lblAddProductCategories.gridy = 0;
 			panel_2.add(lblAddProductCategories, gbc_lblAddProductCategories);
 			panel_1.setLayout(gl_panel_1);
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			
 			
 			panel_3.add(display, "name_2100923842523197");
@@ -696,6 +1039,22 @@ String nm = "sam";
 			panel_49.setBounds(10, 204, 531, 333);
 			display.add(panel_49);
 			
+<<<<<<< HEAD
+			JButton btnTest = new JButton("existing Project ");
+			btnTest.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					FileBrowser.main(null);			//neelz
+				}
+			});
+			btnTest.setBounds(0, 0, 109, 23);
+			display.add(btnTest);
+			
+//			JLabel projectPath = new JLabel("Project Path");
+			projectPath.setBounds(142, 4, 399, 14);
+			display.add(projectPath);
+			
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			/*JEditorPane editorPane = new JEditorPane();
 			editorPane.setBounds(10, 300, 542, 256);
 			display.add(editorPane);
@@ -894,7 +1253,11 @@ String nm = "sam";
 				String sql = "Select Inst_nm , inst_Type from macro_ex";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection64 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection64 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection64.prepareStatement(sql);
@@ -961,7 +1324,11 @@ String nm = "sam";
 				String sql = "Delete from macro_ex";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql);
@@ -975,7 +1342,11 @@ String nm = "sam";
 				String sql12 = "Delete from bom";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql12);
@@ -1005,7 +1376,11 @@ String nm = "sam";
 				    // save the macro excel sheet in db table
 				    try{
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection63 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection63 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 				
@@ -1059,11 +1434,19 @@ String nm = "sam";
 					}
 					fis.close();
 				*/
+<<<<<<< HEAD
+				    File file_bom = new File(startDir+"\\templates\\new.csv");
+				    mac_bom = file_bom.getAbsolutePath();
+				    try{
+						Class.forName("org.sqlite.JDBC");
+					 Connection connection63 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				    File file_bom = new File("M:\\templates\\new.csv");
 				    mac_bom = file_bom.getAbsolutePath();
 				    try{
 						Class.forName("org.sqlite.JDBC");
 					 Connection connection63 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 				
@@ -1140,7 +1523,11 @@ String nm = "sam";
 				mac_bom = "M:\\templates\\new.csv";
 				    try{
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection63 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection63 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 				
@@ -1295,7 +1682,11 @@ String nm = "sam";
 					String query = ("Update macro_ex SET new_mat =?,dens =?,new_wt=? where Inst_nm=?");
 							
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -1340,7 +1731,11 @@ String nm = "sam";
 					try
 					{
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql);
@@ -1375,7 +1770,11 @@ String nm = "sam";
 				/*String sql_search = "Select Type,Name,Sub,density from mat where name like '%"  + search_mat.getText() +  "%' OR type like '%"  + search_mat.getText() +  "%' ;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql);
@@ -1427,7 +1826,11 @@ String nm = "sam";
 				String sql = "Select Type,Name,Sub,density from mat where name like '%"  + search_mat.getText() +  "%' OR type like '%"  + search_mat.getText() +  "%' ;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql);
@@ -1456,7 +1859,11 @@ String nm = "sam";
 				String sql1 = "Select density from mat where name = ? ";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql1);
@@ -1598,7 +2005,11 @@ table_den.setShowHorizontalLines(false);
 							String query = ("Update macro_ex SET alt_mat =?,alt_dens =?,alt_wt=? where Inst_nm=?");
 									
 							Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+							 Connection connection84 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 							 Connection connection84 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 							JOptionPane.showMessageDialog(null, "connection13 successful");		
 							//String id = dm1.getValueAt(i, 0).toString();
 							
@@ -1645,7 +2056,11 @@ table_den.setShowHorizontalLines(false);
 				String sql = "Select Type,Name,Sub,density from mat where name like '%"  + search_altmat.getText() +  "%' OR type like '%"  + search_altmat.getText() +  "%' ;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql);
@@ -1784,7 +2199,11 @@ Object[] column_matalt = {"Material Type","Sub-Categories"," Material name" , "D
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection3 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection3 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				// JOptionPane.showMessageDialog(null, "connection1 successful");
 				
 			
@@ -1825,7 +2244,11 @@ Object[] column_matalt = {"Material Type","Sub-Categories"," Material name" , "D
 				
 				/*try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection7 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection7 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				JOptionPane.showMessageDialog(null, "connection7 successful");		
 					String query =( "SELECT * FROM Process_lib");
 					PreparedStatement pst = connection7.prepareStatement(query);
@@ -1856,7 +2279,11 @@ Object[] column_matalt = {"Material Type","Sub-Categories"," Material name" , "D
 					
 					Object[] Colheads={"Id","Name"};
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection7 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection7 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection7 successful");		
 					String query =( "Select * from Process_lib");
 				  
@@ -1906,7 +2333,11 @@ Object[] column_matalt = {"Material Type","Sub-Categories"," Material name" , "D
 		JButton button_7 = new JButton("Template File");
 		button_7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
+				 File file = new File(startDir+"\\templates\\Process_lib.csv");
+=======
 				 File file = new File("C:\\Users\\Nitesh\\Desktop\\Process_lib.csv");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				 filename1 = file.getAbsolutePath();
 				        try {
 				        	//Desktop dt = Desktop.getDesktop();
@@ -1962,7 +2393,11 @@ Object[] column_matalt = {"Material Type","Sub-Categories"," Material name" , "D
 				String sql = "Select Process_id,Process_name from Process_lib";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection40 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection40 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection40 successful");		
 						
 						PreparedStatement pst = connection40.prepareStatement(sql);
@@ -2002,7 +2437,11 @@ Object[] column_matalt = {"Material Type","Sub-Categories"," Material name" , "D
 				String pro_id = dm_prt.getValueAt(pr_tr.getSelectedRow(), 0).toString();
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection41 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection41 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				
 					
 					String insertTable =( "UPDATE Process_lib SET Part_nm = ? where Process_id = ?" );
@@ -2030,7 +2469,11 @@ Object[] column_matalt = {"Material Type","Sub-Categories"," Material name" , "D
 					catch(Exception e1) { } }
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection42 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection42 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				
 					
 					String insertTable1 =( "UPDATE Process_lib SET Part = ? where Process_id = ?" );
@@ -2058,7 +2501,11 @@ Object[] column_matalt = {"Material Type","Sub-Categories"," Material name" , "D
 					catch(Exception e1) { } }
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection141 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection141 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				
 					
 					String updateclass =( "UPDATE process_lib SET class = (SELECT bom.class FROM bom WHERE process_lib.part_nm = bom.part_id);" );
@@ -2139,7 +2586,11 @@ Object[] column_matalt = {"Material Type","Sub-Categories"," Material name" , "D
 		JButton button_14 = new JButton("Template File");
 		button_14.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
+				File file = new File(startDir+"\\templates\\IO_lib.csv");
+=======
 				File file = new File("C:\\Users\\Nitesh\\Desktop\\IO_lib.csv");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				 filename1 = file.getAbsolutePath();
 				        try {
 				        	//Desktop dt = Desktop.getDesktop();
@@ -2174,7 +2625,11 @@ inp_combo.insertItemAt("---None---", 0);
 				panel_17.setVisible(true);
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection3 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection3 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				// JOptionPane.showMessageDialog(null, "connection1 successful");
 						
 				BufferedReader br = new BufferedReader(new FileReader(filename1));
@@ -2211,7 +2666,11 @@ inp_combo.insertItemAt("---None---", 0);
 			
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection50 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection50 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection6 successful");
 					 //connection = sqlite_conn.dbConnector();
 					String sql = "SELECT DISTINCT io_name FROM io_name ";
@@ -2233,7 +2692,11 @@ inp_combo.insertItemAt("---None---", 0);
 					catch(Exception e1) { } }
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection51 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection51 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection6 successful");
 					 //connection = sqlite_conn.dbConnector();
 					String sql = "SELECT DISTINCT io_name FROM io_name ";
@@ -2324,7 +2787,11 @@ inp_combo.insertItemAt("---None---", 0);
 				String id =  seq_table.getValueAt(seq_table.getSelectedRow(), 0).toString();
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection1 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection1 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					//input from comboBox
 					String insertTableSQL =( "INSERT or Replace INTO Process_seq "
@@ -2384,7 +2851,11 @@ inp_combo.insertItemAt("---None---", 0);
 				String sql = "Select Process_id,Process_name from Process_lib";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection40 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection40 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection40 successful");		
 						
 						PreparedStatement pst = connection40.prepareStatement(sql);
@@ -2410,7 +2881,11 @@ inp_combo.insertItemAt("---None---", 0);
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection50 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection50 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection6 successful");
 					 //connection = sqlite_conn.dbConnector();
 					String sql_pr = "SELECT Inst_nm FROM macro_ex  ";
@@ -2518,7 +2993,11 @@ inp_combo.insertItemAt("---None---", 0);
 				String sql = "Select * from Process_lib";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection12 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection12 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection12 successful");		
 						
 						PreparedStatement pst = connection12.prepareStatement(sql);
@@ -2544,7 +3023,11 @@ dm.removeRow(0);
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection6 successful");
 					 //connection = sqlite_conn.dbConnector();
 					String sql1 = "SELECT DISTINCT Process_id from process_lib ";
@@ -2565,7 +3048,11 @@ dm.removeRow(0);
 					catch(Exception e1) { } }
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection6 successful");
 					 //connection = sqlite_conn.dbConnector();
 					String sql2 = "SELECT DISTINCT Process_id from process_lib";
@@ -2628,7 +3115,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 			public void actionPerformed(ActionEvent e) {
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection41 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection41 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String insertTableSQL =( "INSERT or Replace INTO IO_lib"
@@ -2686,7 +3177,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 					String query = ("Update Process_lib SET Transport='2' where Process_id = ? ");
 						
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -2716,7 +3211,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 						String query = ("Update Process_lib SET Transport='3' where Process_id = ? ");
 							
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 						//JOptionPane.showMessageDialog(null, "connection13 successful");		
 						//String id = dm1.getValueAt(i, 0).toString();
 						
@@ -2853,7 +3352,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 		button_8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+<<<<<<< HEAD
+				File file = new File(startDir+"\\templates\\Pro_alt.csv");
+=======
 				File file = new File("C:\\Users\\Nitesh\\Desktop\\Pro_alt.csv");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				 filename1 = file.getAbsolutePath();
 				        try {
 				        	//Desktop dt = Desktop.getDesktop();
@@ -2894,7 +3397,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection41 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection41 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String insertTableSQL =( "INSERT or Replace INTO proalt_assign"
@@ -2982,7 +3489,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection3 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection3 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				// JOptionPane.showMessageDialog(null, "connection1 successful");
 				
 			
@@ -3020,7 +3531,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 			
 			/*try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				// JOptionPane.showMessageDialog(null, "connection6 successful");
 				 //connection = sqlite_conn.dbConnector();
 				String sql = "SELECT DISTINCT p_name FROM pro_alt";
@@ -3044,7 +3559,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 			String sql = "Select Process_id,Process_name from Process_lib";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection7 successful");		
 					
 					PreparedStatement pst = connection16.prepareStatement(sql);
@@ -3072,7 +3591,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 			
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				// JOptionPane.showMessageDialog(null, "connection6 successful");
 				 //connection = sqlite_conn.dbConnector();
 				String sqlal = "SELECT DISTINCT P_name FROM Pro_alt ";
@@ -3186,7 +3709,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 					String query = ("UPDATE process_lib SET equip_id = ? , equi_count = ?  , op_count = ? where process_id = ? ");
 							
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection26 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection26 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -3226,7 +3753,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 				String query = ("Update Process_lib SET Equip_id=? where Process_id=?");
 						
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection26 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection26 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				JOptionPane.showMessageDialog(null, "connection13 successful");		
 				
 				
@@ -3286,7 +3817,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 		button_11.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+<<<<<<< HEAD
+				File file = new File(startDir+"\\templates\\Equip_alt.csv");
+=======
 				File file = new File("C:\\Users\\Nitesh\\Desktop\\Equip_alt.csv");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				 filename1 = file.getAbsolutePath();
 				        try {
 				        	//Desktop dt = Desktop.getDesktop();
@@ -3313,7 +3848,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection44 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection44 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				// JOptionPane.showMessageDialog(null, "connection1 successful");
 				
 			
@@ -3526,7 +4065,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 		JButton button_5 = new JButton("Template File");
 		button_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
+				 File file = new File(startDir+"\\templates\\Equipment_lib.csv");
+=======
 				 File file = new File("C:\\Users\\Nitesh\\Desktop\\Equipment_lib.csv");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				 filename1 = file.getAbsolutePath();
 				        try {
 				        	//Desktop dt = Desktop.getDesktop();
@@ -3598,7 +4141,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection10 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection10 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				// JOptionPane.showMessageDialog(null, "connection1 successful");
 				BufferedReader br = new BufferedReader(new FileReader(filename1));
 				String line ;
@@ -3633,7 +4180,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 			String sql = "Select Process_id,Process_name from Process_lib";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection7 successful");		
 					
 					PreparedStatement pst = connection16.prepareStatement(sql);
@@ -3662,7 +4213,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 			String sql_eq = "Select Equip_id,Equip_name from Equip_lib";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection20 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection20 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection7 successful");		
 					
 					PreparedStatement pst = connection20.prepareStatement(sql_eq);
@@ -3690,7 +4245,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 			String sql4 = "Select equip_id from Equip_lib order by equip_id";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection19 successful");		
 					
 					PreparedStatement pst = connection19.prepareStatement(sql4);
@@ -3733,7 +4292,11 @@ JCheckBox Input_checkbox = new JCheckBox("Is the Input locally sourced?");
 		JButton button_9 = new JButton("Template File");
 		button_9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
+				File file = new File(startDir+"\\templates\\Space_lib.csv");
+=======
 				File file = new File("C:\\Users\\Nitesh\\Desktop\\Space_lib.csv");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				 filename1 = file.getAbsolutePath();
 				        try {
 				        	//Desktop dt = Desktop.getDesktop();
@@ -3772,7 +4335,11 @@ JComboBox source_combo = new JComboBox();
 				String query = ("Update Process_lib SET Transport='1' where Process_id = ? ");
 					
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection13 successful");		
 				//String id = dm1.getValueAt(i, 0).toString();
 				
@@ -3837,7 +4404,11 @@ JComboBox source_combo = new JComboBox();
 					String query = ("Update Process_lib SET Space_id=? where Process_id=?");
 							
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -3864,7 +4435,11 @@ JComboBox source_combo = new JComboBox();
 						String query = ("Update Process_lib SET Transport='1' where Process_id = ? ");
 							
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 						//JOptionPane.showMessageDialog(null, "connection13 successful");		
 						//String id = dm1.getValueAt(i, 0).toString();
 						
@@ -3892,7 +4467,11 @@ JComboBox source_combo = new JComboBox();
 						String query = ("Update Process_lib SET Space_id=? where Process_id=?");
 								
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 						//JOptionPane.showMessageDialog(null, "connection13 successful");		
 						//String id = dm1.getValueAt(i, 0).toString();
 						
@@ -4016,7 +4595,11 @@ JComboBox source_combo = new JComboBox();
 				String sql_query = "Select space_id,space_role,factory_name,city,country,continent from space_lib";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection26 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection26 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection26.prepareStatement(sql_query);
@@ -4154,7 +4737,11 @@ JComboBox source_combo = new JComboBox();
 				String sql = "Select space_id,city from space_lib";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection26 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection26 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection26.prepareStatement(sql);
@@ -4181,7 +4768,11 @@ JComboBox source_combo = new JComboBox();
 			String sql1 = "Select process_id,process_name from process_lib";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection27 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection27 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection7 successful");		
 					
 					PreparedStatement pst = connection27.prepareStatement(sql1);
@@ -4207,7 +4798,11 @@ JComboBox source_combo = new JComboBox();
 			String sql3 = "Select Process_id,Process_name from Process_lib";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection28 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection28 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection7 successful");		
 					
 					PreparedStatement pst = connection28.prepareStatement(sql3);
@@ -4234,7 +4829,11 @@ JComboBox source_combo = new JComboBox();
 			String sql4 = "Select space_id from Space_lib order by space_id";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection19 successful");		
 					
 					PreparedStatement pst = connection19.prepareStatement(sql4);
@@ -4257,7 +4856,11 @@ JComboBox source_combo = new JComboBox();
 			String sql5 = "Select space_id from Space_lib order";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection19 successful");		
 					
 					PreparedStatement pst = connection19.prepareStatement(sql4);
@@ -4279,7 +4882,11 @@ JComboBox source_combo = new JComboBox();
 			String sql6 = "Select space_id from Space_lib  ";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection19 successful");		
 					
 					PreparedStatement pst = connection19.prepareStatement(sql4);
@@ -4350,7 +4957,11 @@ JComboBox source_combo = new JComboBox();
 				panel_24.setVisible(true);
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection14 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection14 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				// JOptionPane.showMessageDialog(null, "connection1 successful");
 				BufferedReader br = new BufferedReader(new FileReader(filename1));
 				String line ;
@@ -4393,7 +5004,11 @@ JComboBox source_combo = new JComboBox();
 								
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection15 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection15 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection7 successful");		
 					String query =( "SELECT * FROM Space_lib");
 					PreparedStatement pst = connection15.prepareStatement(query);
@@ -4477,7 +5092,11 @@ JComboBox source_combo = new JComboBox();
 		JButton btnNewButton_2 = new JButton("Template File");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
+				File file = new File(startDir+"\\templates\\Space_alt.csv");
+=======
 				File file = new File("C:\\Users\\Nitesh\\Desktop\\Space_alt.csv");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				 filename1 = file.getAbsolutePath();
 				        try {
 				        	//Desktop dt = Desktop.getDesktop();
@@ -4498,7 +5117,11 @@ JComboBox source_combo = new JComboBox();
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection3 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection3 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				// JOptionPane.showMessageDialog(null, "connection1 successful");
 				
 			
@@ -4642,7 +5265,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 					String query = ("Update Process_lib SET LC_id=? where Process_id=?");
 						
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -4668,7 +5295,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 					String query = ("Update Process_lib SET Transport='1' where LC_id = '5'");
 						
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -4792,7 +5423,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 					String query = ("Update Process_lib SET duration=? where Process_id=?");
 							
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection45 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection45 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection45 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					String id = dm_time.getValueAt(pro_tab.getSelectedRow(), 0).toString();
@@ -4978,7 +5613,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 		    	String sql = "Select Process_id,Process_name from Process_lib where Space_id = ?";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection46 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection46 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection46 successful");		
 						
 						PreparedStatement pst = connection46.prepareStatement(sql);
@@ -5208,7 +5847,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 	          String sql6 = " create view pCnew as select p_snew.process_id as IDC,longitude as LongS,latitude as LatS, timeY as timeY ,duration as DuraS, Imp as ImpS , Op_count as MenS , Equi_count as MachS , transport as TransS from pidnew left join p_snew on pidnew.id=p_snew.process_id;";
 					try{
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+						 Connection connection56 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 						 Connection connection56 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 						//JOptionPane.showMessageDialog(null, "connection56 successful");		
 							
 							Statement pst = connection56.createStatement();
@@ -5256,7 +5899,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 	          String sql11 = " create view pPnew as select p_snew.process_id as IDP,longitude as LongS,latitude as LatS, timeY as timeY ,duration as DuraS, Imp as ImpS , Op_count as MenS , Equi_count as MachS , transport as TransS from pidnew left join p_snew on pidnew.pre_pro=p_snew.process_id;";
 					try{
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+						 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 						 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 						//JOptionPane.showMessageDialog(null, "connection56 successful");		
 							
 							Statement pst = connection57.createStatement();
@@ -5304,7 +5951,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
           String sql18 = " create view pSnew as select p_snew.process_id as IDS,longitude as LongS,latitude as LatS, timeY as timeY ,duration as DuraS, Imp as ImpS , Op_count as MenS , Equi_count as MachS , transport as TransS from pidnew left join p_snew on pidnew.suc_pro=p_snew.process_id;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection56 successful");		
 						
 						Statement pst = connection57.createStatement();
@@ -5345,7 +5996,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql_lc = "Select Process_id,Lc_id from Process_lib";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection68 successful");		
 						
 						PreparedStatement pst = connection68.prepareStatement(sql_lc);
@@ -5370,7 +6025,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql_im = "Select Process_id, Imp  from Process_lib";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection68 successful");		
 						
 						PreparedStatement pst = connection68.prepareStatement(sql_im);
@@ -5395,7 +6054,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql_con = "Select Process_id, Conf , Part_nm, Class , Process_name from Process_lib";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection68 successful");		
 						
 						PreparedStatement pst = connection68.prepareStatement(sql_con);
@@ -5445,18 +6108,30 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				}*/
 				
 				try {
+<<<<<<< HEAD
+					exportTable(dm_im, new File(startDir+"\\templates\\processImpact.xls"));
+=======
 					exportTable(dm_im, new File("M:\\templates\\processImpact.xls"));
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
 				
 				try {
+<<<<<<< HEAD
+					exportTable(dm_lcp, new File(startDir+"\\templates\\processLCPhase.xls"));
+=======
 					exportTable(dm_lcp, new File("M:\\templates\\processLCPhase.xls"));
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
 				try {
+<<<<<<< HEAD
+					exportTable(dm_conf, new File(startDir+"\\templates\\processConf.xls"));
+=======
 					exportTable(dm_conf, new File("M:\\templates\\processConf.xls"));
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
@@ -5469,7 +6144,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				//Runtime run=Runtime.getRuntime();
 				try {
 					//Process pr=Runtime.getRuntime().exec("cmd.exe", "Start" , "M:\\templates\\process.bat");
+<<<<<<< HEAD
+					Process pr=Runtime.getRuntime().exec("cmd /c start "+startDir+"\\templates\\header.vbs");
+=======
 					Process pr=Runtime.getRuntime().exec("cmd /c start M:\\templates\\header.vbs");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					System.out.println("batch file executed_header");
 				} catch (IOException e1) {
 					
@@ -5489,7 +6168,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				//tree_imp.main(arg );
 				try {
 					//Process pr=Runtime.getRuntime().exec("cmd.exe", "Start" , "M:\\templates\\process.bat");
+<<<<<<< HEAD
+					Process pr=Runtime.getRuntime().exec("cmd /c start "+startDir+"\\templates\\testVba.vbs");
+=======
 					Process pr=Runtime.getRuntime().exec("cmd /c start M:\\templates\\testVba.vbs");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					System.out.println("batch file executed_header");
 				} catch (IOException e1) {
 					
@@ -5512,7 +6195,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql = "Select distinct Material_name, Material_type, Country from EI_new where Material_Name like '%"  + search_nm.getText() +  "%' ;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql);
@@ -5583,7 +6270,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				instance = dm_imp.getValueAt(pro_imp.getSelectedRow(), 2).toString();
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection85 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection85 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String new_sql =( "Select weight from macro_ex where Inst_nm = ?");
@@ -5611,7 +6302,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection85 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection85 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String new_sql =( "Select Total from EI_new where Material_name=?");
@@ -5643,7 +6338,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 					
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection1 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection1 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String insertTableSQL =( "Update Process_lib SET conf=?,mat_nm=?,Imp=? where Process_id=?");
@@ -5844,7 +6543,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				Inputcheckdisp inp = new Inputcheckdisp();
 				try {
 					//Process pr=Runtime.getRuntime().exec("cmd.exe", "Start" , "M:\\templates\\process.bat");
+<<<<<<< HEAD
+					Process pr=Runtime.getRuntime().exec("cmd /c start "+startDir+"\\templates\\duration.vbs");
+=======
 					Process pr=Runtime.getRuntime().exec("cmd /c start M:\\templates\\duration.vbs");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					System.out.println("batch file executed_duration");
 				} catch (IOException e1) {
 					
@@ -5876,7 +6579,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql_rel = "SELECT DISTINCT * FROM Relations_info order by Rid";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql_rel);
@@ -5963,7 +6670,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
           String sql6 = " create view pCnew as select p_snew.process_id as IDC,longitude as LongS,latitude as LatS, timeY as timeY ,duration as DuraS, Imp as ImpS , Op_count as MenS , Equi_count as MachS , transport as TransS from pidnew left join p_snew on pidnew.id=p_snew.process_id;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection56 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection56 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection56 successful");		
 						
 						Statement pst = connection56.createStatement();
@@ -6010,7 +6721,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
           String sql11 = " create view pPnew as select p_snew.process_id as IDP,longitude as LongS,latitude as LatS, timeY as timeY ,duration as DuraS, Imp as ImpS , Op_count as MenS , Equi_count as MachS , transport as TransS from pidnew left join p_snew on pidnew.pre_pro=p_snew.process_id;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection56 successful");		
 						
 						Statement pst = connection57.createStatement();
@@ -6057,7 +6772,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
           String sql18 = " create view pSnew as select p_snew.process_id as IDS,longitude as LongS,latitude as LatS, timeY as timeY ,duration as DuraS, Imp as ImpS , Op_count as MenS , Equi_count as MachS , transport as TransS from pidnew left join p_snew on pidnew.suc_pro=p_snew.process_id;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection56 successful");		
 						
 						Statement pst = connection57.createStatement();
@@ -6099,7 +6818,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql_lc = "Select Process_id, Lc_id from " + rel_name;
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection68 successful");		
 						
 						PreparedStatement pst = connection68.prepareStatement(sql_lc);
@@ -6125,7 +6848,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql_im = "Select Process_id, Imp  from " + rel_name;
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection68 successful");		
 						
 						PreparedStatement pst = connection68.prepareStatement(sql_im);
@@ -6154,7 +6881,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				//exportlcpa();
 				try {
 					//exportTable(dm_idc, new File("M:\\Relations\\" + response +"\\IDCA.xls"));
+<<<<<<< HEAD
+					exportTable(dm_idc, new File(startDir+"\\templates\\IDCA.xls"));
+=======
 					exportTable(dm_idc, new File("M:\\templates\\IDCA.xls"));
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -6162,7 +6893,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 
 				try {
 					//exportTable(dm_idp, new File("M:\\Relations\\" + response +"\\IDPA.xls"));
+<<<<<<< HEAD
+					exportTable(dm_idp, new File(startDir+"\\templates\\IDPA.xls"));
+=======
 					exportTable(dm_idp, new File("M:\\templates\\IDPA.xls"));
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -6170,7 +6905,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 
 				try {
 					//exportTable(dm_ids, new File("M:\\Relations\\" + response +"\\IDSA.xls"));
+<<<<<<< HEAD
+					exportTable(dm_ids, new File(startDir+"\\templates\\IDSA.xls"));
+=======
 					exportTable(dm_ids, new File("M:\\templates\\IDSA.xls"));
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -6178,20 +6917,32 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 			
 				try {
 					//exportTable(dm_ids, new File("M:\\Relations\\" + response +"\\IDSA.xls"));
+<<<<<<< HEAD
+					exportTable(dm_impa, new File(startDir+"\\templates\\processImpactAR.xls"));
+=======
 					exportTable(dm_impa, new File("M:\\templates\\processImpactAR.xls"));
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 				try {
 					//exportTable(dm_ids, new File("M:\\Relations\\" + response +"\\IDSA.xls"));
+<<<<<<< HEAD
+					exportTable(dm_lcpa, new File(startDir+"\\templates\\processLCPhaseAR.xls"));
+=======
 					exportTable(dm_lcpa, new File("M:\\templates\\processLCPhaseAR.xls"));
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 				
+<<<<<<< HEAD
+				String path=startDir+"\\templates\\processAR.bat";
+=======
 				String path="M:\\templates\\processAR.bat";
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				Runtime rn=Runtime.getRuntime();
 				try {
 					Process pr=rn.exec(path);
@@ -6267,7 +7018,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql = "Select Process_id, Process_name from " + response;
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection65 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection65 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection65.prepareStatement(sql);
@@ -6308,7 +7063,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql4 = "Select equip_id,equip_name from Equip_lib ";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection19 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection19 successful");		
 						
 						PreparedStatement pst = connection19.prepareStatement(sql4);
@@ -6333,7 +7092,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql5 = "Select eq_id, eq_nm from Equip_alt ";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection66 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection66 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection19 successful");		
 						
 						PreparedStatement pst = connection66.prepareStatement(sql5);
@@ -6436,7 +7199,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection69 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection69 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection7 successful");		
 					String query =( "SELECT Space_id , Space_role || ' ' || country||' ' ||city||' ' ||state || ' ' ||continent FROM Space_lib");
 					PreparedStatement pst = connection69.prepareStatement(query);
@@ -6501,7 +7268,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection41 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection41 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String insertTableSQL =( "INSERT or Replace INTO IO_lib"
@@ -6559,7 +7330,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 					String query = ("Update " + response +"  SET Transport='2' where Process_id = ? ");
 						
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -6589,7 +7364,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 						String query = ("Update " + response +" SET Transport='3' where Process_id = ? ");
 							
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 						//JOptionPane.showMessageDialog(null, "connection13 successful");		
 						//String id = dm1.getValueAt(i, 0).toString();
 						
@@ -6717,7 +7496,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql = "Select Process_id , Process_name, duration from " + response;
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection70 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection70 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection70.prepareStatement(sql);
@@ -6763,7 +7546,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql = "Select Process_id,Process_name,Part_nm from " + response;
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection73 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection73 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection73.prepareStatement(sql);
@@ -6802,7 +7589,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				Testing();
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection81 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection81 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String insertTableSQL =( "INSERT INTO Relations_info"
@@ -6870,7 +7661,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql = "Select Process_id,Process_name, LC_id from " + response;
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection73 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection73 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection73.prepareStatement(sql);
@@ -6929,7 +7724,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
           String sql6 = " create view pCnew as select p_snew.process_id as IDC,longitude as LongS,latitude as LatS, timeY as timeY ,duration as DuraS, Imp as ImpS , Op_count as MenS , Equi_count as MachS , transport as TransS from pidnew left join p_snew on pidnew.id=p_snew.process_id;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection56 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection56 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection56 successful");		
 						
 						Statement pst = connection56.createStatement();
@@ -6976,7 +7775,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
           String sql11 = " create view pPnew as select p_snew.process_id as IDP,longitude as LongS,latitude as LatS, timeY as timeY ,duration as DuraS, Imp as ImpS , Op_count as MenS , Equi_count as MachS , transport as TransS from pidnew left join p_snew on pidnew.pre_pro=p_snew.process_id;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection56 successful");		
 						
 						Statement pst = connection57.createStatement();
@@ -7023,7 +7826,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
           String sql18 = " create view pSnew as select p_snew.process_id as IDS,longitude as LongS,latitude as LatS, timeY as timeY ,duration as DuraS, Imp as ImpS , Op_count as MenS , Equi_count as MachS , transport as TransS from pidnew left join p_snew on pidnew.suc_pro=p_snew.process_id;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection57 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection56 successful");		
 						
 						Statement pst = connection57.createStatement();
@@ -7065,7 +7872,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql_lc = "Select Process_id, Process_name , Lc_id from Process_lib";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection68 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection68 successful");		
 						
 						PreparedStatement pst = connection68.prepareStatement(sql_lc);
@@ -7149,7 +7960,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 					String query = ("Update " +response + " SET Process_name=? where Process_id=?");
 					String id = dm_ap.getValueAt(alt_pro.getSelectedRow(), 0).toString();  		
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection74 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection74 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -7185,7 +8000,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 				String sql = "Select Process_id,Process_name from " + response;
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection40 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection40 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					JOptionPane.showMessageDialog(null, "connection40 successful");		
 						
 						PreparedStatement pst = connection40.prepareStatement(sql);
@@ -7212,7 +8031,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 			
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection50 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection50 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection6 successful");
 					 //connection = sqlite_conn.dbConnector();
 					String sql1 = "SELECT DISTINCT io_name FROM io_name ";
@@ -7234,7 +8057,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 					catch(Exception e1) { } }
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection51 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection51 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection6 successful");
 					 //connection = sqlite_conn.dbConnector();
 					String sql1 = "SELECT DISTINCT io_name FROM io_name ";
@@ -7409,7 +8236,11 @@ String id = dm_lc.getValueAt(table_3.getSelectedRow(), 0).toString();
 						String query = ("Update " +response + " SET LC_id=? where Process_id=?");
 								
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+						 Connection connection74 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 						 Connection connection74 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 						//JOptionPane.showMessageDialog(null, "connection13 successful");		
 						//String id = dm1.getValueAt(i, 0).toString();
 						
@@ -7539,7 +8370,11 @@ Object[] column_lca = {"Id","Process" , " Assigned LC Phase", "Alternate LCPhase
 					String pid = equi_alt.getValueAt(equi_alt.getSelectedRow(), 0).toString();  
 					String id = table_alteq.getValueAt(table_alteq.getSelectedRow(), 0).toString();  		
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection74 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection74 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -7672,7 +8507,11 @@ JComboBox comboBox_5 = new JComboBox();
 				String sql = "Select space_id  from space_lib ";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection66 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection66 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection66.prepareStatement(sql);
@@ -7712,7 +8551,11 @@ JComboBox comboBox_5 = new JComboBox();
 						String query = ("Update " + response +" SET Transport='1' where Process_id = ? ");
 							
 						Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 						 Connection connection24 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 						//JOptionPane.showMessageDialog(null, "connection13 successful");		
 						//String id = dm1.getValueAt(i, 0).toString();
 						
@@ -7752,7 +8595,11 @@ JComboBox comboBox_5 = new JComboBox();
 					//String pid = equi_alt.getValueAt(equi_alt.getSelectedRow(), 0).toString();  
 					String id = alt_sp_tab.getValueAt(alt_sp_tab.getSelectedRow(), 0).toString();  		
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection74 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection74 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//	JOptionPane.showMessageDialog(null, "connection13 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					
@@ -7847,7 +8694,11 @@ JComboBox comboBox_5 = new JComboBox();
 				String sql = "Select space_id  from space_lib ";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection66 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection66 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection66.prepareStatement(sql);
@@ -7899,7 +8750,11 @@ try{
 					String query = ("Update" + response +" SET duration=? where Process_id=?");
 							
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection45 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection45 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection45 successful");		
 					//String id = dm1.getValueAt(i, 0).toString();
 					pt_alt.getModel().setValueAt(textField_9.getText(), pt_alt.getSelectedRow(), 3);
@@ -8053,7 +8908,11 @@ try{
 				String sql = "Select distinct Material_name, Material_type, Country from EI_new where Material_Name like '%"  + textField_10.getText() +  "%' ;";
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					//JOptionPane.showMessageDialog(null, "connection7 successful");		
 						
 						PreparedStatement pst = connection16.prepareStatement(sql);
@@ -8117,7 +8976,11 @@ try{
 				instance = dm_imp.getValueAt(pro_imp.getSelectedRow(), 2).toString();
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection85 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection85 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String new_sql =( "Select new_wt from macro_ex where Inst_nm = ?");
@@ -8145,7 +9008,11 @@ try{
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection85 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection85 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String new_sql =( "Select Total from EI_new where Material_name=?");
@@ -8180,7 +9047,11 @@ try{
 				
 				try{
 					Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+					 Connection connection1 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 					 Connection connection1 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 					// JOptionPane.showMessageDialog(null, "connection1 successful");
 					
 					String insertTableSQL =( "Update "+ response +" SET conf=?,mat_nm=? where Process_id=?");
@@ -8767,6 +9638,13 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 	
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
+//		String startDir=System.getProperty("user.dir");
+		JOptionPane.showMessageDialog(null,startDir);
+		lblDefaultPath.setText(startDir);
+		
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -8790,7 +9668,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql = "Select Process_id,Process_name from Process_lib";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection7 successful");		
 				
 				PreparedStatement pst = connection16.prepareStatement(sql);
@@ -8822,7 +9704,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql = "Select alt_name  from proalt_assign where p_id ='" + pr_id + "' ; ";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection66 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection66 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		//	JOptionPane.showMessageDialog(null, "connection7 successful");		
 				
 				PreparedStatement pst = connection66.prepareStatement(sql);
@@ -8849,7 +9735,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 			String sql1 = "Select density from mat where name = ? ";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				//JOptionPane.showMessageDialog(null, "connection7 successful");		
 					
 					PreparedStatement pst = connection16.prepareStatement(sql1);
@@ -8878,7 +9768,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql_equip = "SELECT DISTINCT Equip_name FROM Equip_lib inner join Pro_equip ON equip_lib.equip_id =Pro_equip.eid and Pro_equip.pid='" + pr_id1 + "' ;";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection7 successful");		
 				
 				PreparedStatement pst = connection16.prepareStatement(sql_equip);
@@ -8906,7 +9800,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql_equip = "SELECT Space_role FROM space_lib INNER JOIN Process_lib ON Space_lib.space_id = Process_lib.Space_id and Process_lib.process_id='" + pr_id1 + "' ;";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection47 successful");		
 				
 				PreparedStatement pst = connection47.prepareStatement(sql_equip);
@@ -8932,7 +9830,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql_time = "SELECT Space_id from " + response + " where Process_id =" + pr_nm;
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection47 successful");		
 				
 				PreparedStatement pst = connection47.prepareStatement(sql_time);
@@ -8958,7 +9860,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql_eq = "SELECT equip_id from " + response + " where Process_id =" + pr_nm;
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection47 successful");		
 				
 				PreparedStatement pst = connection47.prepareStatement(sql_eq);
@@ -8986,7 +9892,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql_equip = "SELECT Space_role FROM space_lib INNER JOIN Process_lib ON Space_lib.space_id = Process_lib.Space_id and Process_lib.process_id='" + pr_id + "' ;";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection47 successful");		
 				
 				PreparedStatement pst = connection47.prepareStatement(sql_equip);
@@ -9015,7 +9925,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql_imp = "SELECT Country FROM space_lib INNER JOIN Process_lib ON Space_lib.space_id = Process_lib.Space_id and Process_lib.process_id='" + pro_imp1 + "' ;";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection47 successful");		
 				
 				PreparedStatement pst = connection47.prepareStatement(sql_imp);
@@ -9041,7 +9955,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql_imp = "SELECT Country FROM space_lib INNER JOIN Process_lib ON Space_lib.space_id = Process_lib.Space_id and Process_lib.process_id='" + pro_imp1 + "' ;";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection47 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection47 successful");		
 				
 				PreparedStatement pst = connection47.prepareStatement(sql_imp);
@@ -9087,7 +10005,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 			try{
 				Class.forName("org.sqlite.JDBC");
 				
+<<<<<<< HEAD
+				 Connection connection72 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection72 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				 Statement stmt =  connection72.createStatement();
 				 //JOptionPane.showMessageDialog(null, "connection12 successful");		
 					
@@ -9100,21 +10022,35 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 			{
 				ex.printStackTrace();
 			}
+<<<<<<< HEAD
+			source = new File(startDir +"\\templates");
+			dest = new File(startDir +"\\Relations_new");
+=======
 			source = new File("M:\\Template");
 			dest = new File("M:\\Relations_new");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			copy_folder(  source, dest);
 	  }
 	 public void create_folder()
 	  {
+<<<<<<< HEAD
+		 work_dir = startDir +"\\Relations\\";
+=======
 		 work_dir = "M:\\Relations\\";
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		 File file = new File(work_dir + response);
 		 file.mkdir();
 		 System.out.print("Folder created" + file.getAbsolutePath());
 		  }
 	 public void create_mainfolder()
 	  {
+<<<<<<< HEAD
+		 work_dir = startDir ;
+		 File file = new File(work_dir + textProject.getText()  );
+=======
 		 work_dir = "M:\\";
 		 File file = new File(work_dir + textField.getText()  );
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		 file.mkdir();
 		 System.out.print("Folder created" + file.getAbsolutePath());
 		  }
@@ -9123,7 +10059,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		String sql = "Select Process_id,Process_name from Process_lib";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection7 successful");		
 				
 				PreparedStatement pst = connection16.prepareStatement(sql);
@@ -9152,7 +10092,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 			String sql_equip = "SELECT Equip_name FROM Equip_lib INNER JOIN Process_lib on equip_lib.equip_id = Process_lib.equip_id && process_id=?";
 			try{
 				Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+				 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 				 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 				JOptionPane.showMessageDialog(null, "connection7 successful");		
 					
 					PreparedStatement pst = connection16.prepareStatement(sql_equip);
@@ -9204,7 +10148,11 @@ Object[] column_idc = {"IdC","LongC","LatC", "TimeyC","DuraC","ImpC", "MenC" , "
 		    }
 		     
 		    
+<<<<<<< HEAD
+		    FileOutputStream out = new FileOutputStream(startDir+"\\templates\\IDC.xls");
+=======
 		    FileOutputStream out = new FileOutputStream("M:\\templates\\IDC.xls");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		    wb.write(out);
 		    out.close();
 		} catch (FileNotFoundException ex) {
@@ -9269,7 +10217,11 @@ public void exportTable(DefaultTableModel model,File file) throws IOException {
 		    }
 		     
 		    
+<<<<<<< HEAD
+		    FileOutputStream out = new FileOutputStream(startDir +"\\Template\\processLCPhase.xls");
+=======
 		    FileOutputStream out = new FileOutputStream("M:\\Template\\processLCPhase.xls");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		    wb.write(out);
 		    out.close();
 		} catch (FileNotFoundException ex) {
@@ -9298,7 +10250,11 @@ public void exportTable(DefaultTableModel model,File file) throws IOException {
 		    }
 		     
 		    
+<<<<<<< HEAD
+		    FileOutputStream out = new FileOutputStream(startDir+"\\templates\\IDP.xls");
+=======
 		    FileOutputStream out = new FileOutputStream("M:\\templates\\IDP.xls");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		    wb.write(out);
 		    out.close();
 		} catch (FileNotFoundException ex) {
@@ -9327,7 +10283,11 @@ public void exportTable(DefaultTableModel model,File file) throws IOException {
 		    }
 		     
 		    
+<<<<<<< HEAD
+		    FileOutputStream out = new FileOutputStream(startDir+"\\templates\\IDS.xls");
+=======
 		    FileOutputStream out = new FileOutputStream("M:\\templates\\IDS.xls");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		    wb.write(out);
 		    out.close();
 		} catch (FileNotFoundException ex) {
@@ -9355,7 +10315,11 @@ public void exportTable(DefaultTableModel model,File file) throws IOException {
 		    }
 		     
 		    
+<<<<<<< HEAD
+		    FileOutputStream out = new FileOutputStream(startDir +"\\Relations\\" + response +"\\IDCA.xls");
+=======
 		    FileOutputStream out = new FileOutputStream("M:\\Relations\\" + response +"\\IDCA.xls");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		    wb.write(out);
 		    out.close();
 		} catch (FileNotFoundException ex) {
@@ -9383,7 +10347,11 @@ public void exportTable(DefaultTableModel model,File file) throws IOException {
 		    }
 		     
 		    
+<<<<<<< HEAD
+		    FileOutputStream out = new FileOutputStream(startDir +"\\Relations\\" + response +"\\IDPA.xls");
+=======
 		    FileOutputStream out = new FileOutputStream("M:\\Relations\\" + response +"\\IDPA.xls");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		    wb.write(out);
 		    out.close();
 		} catch (FileNotFoundException ex) {
@@ -9411,7 +10379,11 @@ public void exportTable(DefaultTableModel model,File file) throws IOException {
 		    }
 		     
 		    
+<<<<<<< HEAD
+		    FileOutputStream out = new FileOutputStream(startDir +"\\Relations\\" + response +"\\IDSA.xls");
+=======
 		    FileOutputStream out = new FileOutputStream("M:\\Relations\\" + response +"\\IDSA.xls");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 		    wb.write(out);
 		    out.close();
 		} catch (FileNotFoundException ex) {
@@ -9467,7 +10439,11 @@ public void exportTable(DefaultTableModel model,File file) throws IOException {
 		String sql = "Select  Inst_nm, ass_mat , weight , vol  from macro_ex ";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection62 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection62 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection12 successful");		
 				
 				PreparedStatement pst = connection62.prepareStatement(sql);
@@ -9501,7 +10477,11 @@ dm_mat.removeRow(0);
 		//String sql2 = "Select country from space_lib"
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection16 successful");		
 				
 				PreparedStatement pst = connection16.prepareStatement(sql);
@@ -9529,7 +10509,11 @@ dm_mat.removeRow(0);
 		String sql2= "SELECT country||' ' ||city||' ' ||state || ' ' ||continent FROM Space_lib inner join Process_lib ON space_lib.space_id =Process_lib.space_id";
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection16 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			//JOptionPane.showMessageDialog(null, "connection16 successful");		
 				
 				PreparedStatement pst = connection16.prepareStatement(sql2);
@@ -9565,7 +10549,11 @@ dm_mat.removeRow(0);
 		//Type_combo.removeAll();
 		try{
 			Class.forName("org.sqlite.JDBC");
+<<<<<<< HEAD
+			 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:"+startDir+"\\templates\\Project.sqlite");
+=======
 			 Connection connection6 = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nitesh\\Desktop\\SM\\Project.sqlite");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 			// JOptionPane.showMessageDialog(null, "connection6 successful");
 			 //connection = sqlite_conn.dbConnector();
 			String sql = "SELECT DISTINCT type FROM mat";
@@ -9612,6 +10600,12 @@ dm_mat.removeRow(0);
 	//System.out.println(s3);
 		return s3;
 	}
+<<<<<<< HEAD
+	public JTree getTree() {
+		return tree;
+	}
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 }
 
 

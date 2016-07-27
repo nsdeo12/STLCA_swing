@@ -1,0 +1,80 @@
+Id,Conf,Product_type,Class,Process_Name
+1,66.5,4,Yes,Wing elements received
+2,0.7,3,Yes,Wing skeleton frame assembly
+3,0.7,3,Yes,Skin assembly to frame
+4,0.7,2,Yes,Flaps received
+5,0.7,6,Yes,Checking of fasteneres
+6,0.595,7,No,Fuselage skins received
+7,0.595,8,Yes,Fuselage frames received
+8,66.5,9,Yes,Fuselage building- rear - lower portion
+9,59.5,7,No,Fuselage building- rear - roof
+10,59.5,9,Yes,Fuselage building-middle -lower portion
+11,59.5,2,Yes,Fuselage building-middle -roof
+12,0.595,2,Yes,Fuselage building-front - lower portion
+13,66.5,3,Yes,Fuselage building-front - roof
+14,0.595,3,Yes,Checking of fasteneres
+15,0.595,4,Yes,Wing assembly to middle fuselage
+16,0.595,2,Yes,Fuselage assembly-front-middle
+17,0,2,Yes,Fuselage assembly-middle-rear
+18,0.595,4,Yes,Nose arrives
+19,66.5,4,Yes,Fuselage assembly- nose-front
+20,0.595,4,Yes,Concrete blocks hung on wings on engine position
+21,66.5,0,0,Engine assembly received
+22,0.595,3,Yes,Engine 1 brought in trolleys
+23,0,0,0,Positioning of Engine 1 in place
+24,0,0,0,Bolting of Engine 1 to wing
+25,0,0,0,Engine 2 brought in trolleys
+26,0,0,0,Positioning of Engine 2 in place
+27,0,0,0,Bolting of Engine 2 to wing
+28,0,0,0,Engine 3 brought in trolleys
+29,0,0,0,Positioning of Engine 3 in place
+30,0,0,0,Bolting of Engine 3 to wing
+31,0,0,0,Engine 4 brought in trolleys
+32,0,0,0,Positioning of Engine 4 in place
+33,0,0,0,Bolting of Engine 4 to wing
+34,0,0,0,Landing gear assembly arrives
+35,0,0,0,Landing gear joining to aircraft
+36,0,0,0,Checking of circuits
+37,0,0,0,Plugging power supply
+38,0,0,0,Power on test
+39,0,0,0,Moving to Paint shop
+40,0,0,0,Protective vinyl removal
+41,0,0,0,Base layer spray painting
+42,0,0,0,Painting of airliner colours
+43,0,0,0,Interior finishing
+44,0,0,0,Aircraft seats arrives
+45,0,0,0,Seats fixing
+46,0,0,0,Test flight - Flight Load survey
+47,0,0,0,Test flight- Vleocity minimum on stick test
+48,0,0,0,Test flight- Flutter test
+49,0,0,0,Final finishing
+50,0,0,0,Aircraft delivery
+51,0,0,0,High grade titanium sheets arrive
+52,0,0,0,Titanium sandwich sheet preparation
+53,0,0,0,Heating of sheets
+54,0,0,0,Blowing of sheets for internal cavity
+55,0,0,0,Furnace heating
+56,0,0,0,Finishing of fan blades
+57,0,0,0,Testing of fan blades
+58,0,0,0,Fan blades shipped
+59,0,0,0,High grade metal arrive
+60,0,0,0,Fan case machining
+61,0,0,0,Machined waste recycled
+62,0,0,0,Cases shipped
+63,0,0,0,High grade metal arrive
+64,0,0,0,Moulding of turbine blades
+65,0,0,0,Testing for defects
+66,0,0,0,Casting of turbine blades
+67,0,0,0,Testing of defects
+68,0,0,0,Finishing of turbine blades
+69,0,0,0,Turbine blades shipped
+70,0,0,0,Turbine assembly
+71,0,0,0,Wiring on turbine assembly
+72,0,0,0,Compressor assembly
+73,0,0,0,Propulsor assembly
+74,0,0,0,Fan blade assembly
+75,0,0,0,Fan blade to engine assembly
+76,0,0,0,Spinner assembly
+77,0,0,0,Ducts arrive
+78,0,0,0,Duct assembly
+79,0,0,0,Testing done

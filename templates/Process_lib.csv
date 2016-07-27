@@ -1,0 +1,80 @@
+Process_id,Process_name
+1,Wing elements received
+2,Wing skeleton frame assembly
+3,Skin assembly to frame
+4,Flaps received
+5,Checking of fasteneres
+6,Fuselage skins received
+7,Fuselage frames received
+8,Fuselage building- rear - lower portion
+9,Fuselage building- rear - roof
+10,Fuselage building-middle -lower portion
+11,Fuselage building-middle -roof
+12,Fuselage building-front - lower portion
+13,Fuselage building-front - roof
+14,Checking of fasteneres
+15,Wing assembly to middle fuselage
+16,Fuselage assembly-front-middle
+17,Fuselage assembly-middle-rear
+18,Nose arrives
+19,Fuselage assembly- nose-front
+20,Concrete blocks hung on wings on engine position
+21,Engine assembly received
+22,Engine 1 brought in trolleys
+23,Positioning of Engine 1 in place
+24,Bolting of Engine 1 to wing
+25,Engine 2 brought in trolleys
+26,Positioning of Engine 2 in place
+27,Bolting of Engine 2 to wing
+28,Engine 3 brought in trolleys
+29,Positioning of Engine 3 in place
+30,Bolting of Engine 3 to wing
+31,Engine 4 brought in trolleys
+32,Positioning of Engine 4 in place
+33,Bolting of Engine 4 to wing
+34,Landing gear assembly arrives
+35,Landing gear joining to aircraft
+36,Checking of circuits
+37,Plugging power supply
+38,Power on test
+39,Moving to Paint shop
+40,Protective vinyl removal
+41,Base layer spray painting
+42,Painting of airliner colours
+43,Interior finishing
+44,Aircraft seats arrives
+45,Seats fixing
+46,Test flight - Flight Load survey
+47,Test flight- Vleocity minimum on stick test
+48,Test flight- Flutter test
+49,Final finishing
+50,Aircraft delivery
+51,High grade titanium sheets arrive
+52,Titanium sandwich sheet preparation
+53,Heating of sheets
+54,Blowing of sheets for internal cavity
+55,Furnace heating
+56,Finishing of fan blades
+57,Testing of fan blades
+58,Fan blades shipped
+59,High grade metal arrive
+60,Fan case machining
+61,Machined waste recycled
+62,Cases shipped
+63,High grade metal arrive
+64,Moulding of turbine blades
+65,Testing for defects
+66,Casting of turbine blades
+67,Testing of defects
+68,Finishing of turbine blades
+69,Turbine blades shipped
+70,Turbine assembly
+71,Wiring on turbine assembly
+72,Compressor assembly
+73,Propulsor assembly
+74,Fan blade assembly
+75,Fan blade to engine assembly
+76,Spinner assembly
+77,Ducts arrive
+78,Duct assembly
+79,Testing done

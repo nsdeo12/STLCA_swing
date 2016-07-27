@@ -2,6 +2,79 @@
 <classpath>
 	<classpathentry kind="src" path="src/lca"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+<<<<<<< HEAD
+	<classpathentry kind="lib" path="jarAddOns/apache-logging-log4j.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-poi.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4-test-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4-tests.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/core.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/forms-1.3.0.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/jxl.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/opencsv-3.8.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/org.eclipse.swt-3.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/rs2xml.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/sqlite-jdbc-3.8.11.2.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/swt-debug.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/swt.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-1.2-api-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-1.2-api-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-1.2-api-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-api-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-api-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-api-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-core-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-core-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-core-2.6.1-tests.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-core-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-flume-ng-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-flume-ng-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-flume-ng-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-iostreams-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-iostreams-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-iostreams-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-jcl-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-jcl-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-jcl-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-jmx-gui-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-jmx-gui-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-jmx-gui-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-jul-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-jul-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-jul-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-nosql-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-nosql-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-nosql-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-slf4j-impl-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-slf4j-impl-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-slf4j-impl-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-taglib-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-taglib-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-taglib-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-to-slf4j-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-to-slf4j-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-to-slf4j-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-web-2.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-web-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/apache-log4j-2.6.1-bin/log4j-web-2.6.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4/commons-io-2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4/commons-io-2.4-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4/commons-io-2.4-test-sources.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4/commons-io-2.4-tests.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/commons-io-2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/jarFilesAddons/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/jarFilesAddons/apache-poi.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/jarFilesAddons/core.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/jarFilesAddons/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/jarFilesAddons/org.eclipse.swt-3.1.jar"/>
+	<classpathentry kind="lib" path="jarAddOns/jarFilesAddons/rs2xml.jar"/>
+=======
 	<classpathentry kind="lib" path="C:/Users/Nitesh/Downloads/commons-io-2.4-bin (1)/commons-io-2.4/commons-io-2.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Nitesh/Desktop/opencsv-3.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Nitesh/Downloads/rs2xml.jar"/>
@@ -16,5 +89,6 @@
 	<classpathentry kind="lib" path="C:/Users/Nitesh/Downloads/jcalendar-1.4/lib/jcalendar-1.4.jar"/>
 	<classpathentry kind="lib" path="M:/swt-4.5-win32-win32-x86_64/swt.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Nitesh/Desktop/sqlite-jdbc-3.8.11.2.jar"/>
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	<classpathentry kind="output" path="bin"/>
 </classpath>

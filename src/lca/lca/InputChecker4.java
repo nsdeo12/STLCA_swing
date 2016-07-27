@@ -6,7 +6,11 @@ import processing.data.TableRow;
 
 public class InputChecker4 extends PApplet {
 	PApplet parent;
+<<<<<<< HEAD
+
+=======
 	
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	public static void main(String _args[]){
 		
 		PApplet.main(new String[]{"--present", "lca.InputChecker4"});
@@ -29,7 +33,13 @@ int temp_p;
 
 	int rowc()
 	{
+<<<<<<< HEAD
+		System.out.print(main.startDir.toString()+"\\templates\\processingTemplate.csv\n");
+	 Table table1 = loadTable(main.startDir.toString()+"\\templates\\processingTemplate.csv", "header");
+	
+=======
 	 Table table1 = loadTable("M:\\templates\\processingTemplate.csv", "header");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	int rowc = table1.getRowCount();
 	return rowc;
 	}
@@ -37,7 +47,11 @@ int temp_p;
 	int rows = rowc();
 	int rowc1()
 	{
+<<<<<<< HEAD
+	 Table table2 = loadTable(main.startDir.toString()+"\\templates\\processImpact.csv", "header");
+=======
 	 Table table2 = loadTable("M:\\templates\\processImpact.csv", "header");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	int rowc1 = table2.getRowCount();
 	return rowc1;
 	}
@@ -45,7 +59,11 @@ int temp_p;
 
 int rowc2()
 	{
+<<<<<<< HEAD
+	 Table table3 = loadTable(main.startDir.toString()+"\\templates\\processLCPhase.csv", "header");
+=======
 	 Table table3 = loadTable("M:\\templates\\processLCPhase.csv", "header");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	int rowc2 = table3.getRowCount();
 	return rowc2;
 	}
@@ -53,14 +71,22 @@ int rowc2()
 
 	int rowc3()
 	{
+<<<<<<< HEAD
+	 Table table4= loadTable(main.startDir.toString()+"\\templates\\processConf.csv", "header");
+=======
 	 Table table4= loadTable("M:\\templates\\processConf.csv", "header");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	int rowc3 = table4.getRowCount();
 	return rowc3;
 	}
 	int rows3 = rowc3();
 	int rowc_pr()
 	{
+<<<<<<< HEAD
+	Table table11 = loadTable(main.startDir.toString()+"\\templates\\new1.csv", "header");
+=======
 	Table table11 = loadTable("M:\\templates\\new1.csv", "header");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	int rowc_pr = table11.getRowCount();
 	return rowc_pr;
 	}
@@ -76,10 +102,17 @@ int rowc2()
 	Table table4;
 	public void setup() {
 
+<<<<<<< HEAD
+	  Table table = loadTable(main.startDir.toString()+"\\templates\\processingTemplate.csv", "header");
+	  Table table1 = loadTable(main.startDir.toString()+"\\templates\\processImpact.csv", "header");
+	  Table table2 = loadTable(main.startDir.toString()+"\\templates\\processLCPhase.csv", "header");
+  Table table3=loadTable(main.startDir.toString()+"\\templates\\processConf.csv","header");
+=======
 	  Table table = loadTable("M:\\templates\\processingTemplate.csv", "header");
 	  Table table1 = loadTable("M:\\templates\\processImpact.csv", "header");
 	  Table table2 = loadTable("M:\\templates\\processLCPhase.csv", "header");
   Table table3=loadTable("M:\\templates\\processConf.csv","header");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 
 	  for (int i = 0; i < cols; i++) {
 	    for (int j = 0; j < rows; j++) {
@@ -694,7 +727,11 @@ saveTable(table4, "M:\\templates\\krishna.csv");*/
 	  }
 
 	  //saveTable(table, "M:\\templates\\Input.csv");
+<<<<<<< HEAD
+	  saveTable(table, main.startDir.toString()+"\\templates\\Input_original.csv");
+=======
 	  saveTable(table, "C:\\Users\\Nitesh\\Desktop\\boeing 747-8\\Input_original.csv");
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	  //println(cell[20][0]);
 	  //println(cell[20][1]);
 	  //println(cell[20][2]);

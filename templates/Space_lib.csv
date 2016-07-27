@@ -1,0 +1,16 @@
+Space_Id,Space Role,Latitude,Longitude,Factory Name,City/Town,State,Country,Continent
+1,Duct manufacturing facility,23.35,-65.28,,,,Canada,North America
+2,Turbine blade facility,24.35,-70.28,,,,Canada,North America
+3,Fan case facility,25.35,-75.28,,,,Canada,North America
+4,Fan blade facility,26.35,-80.28,,,,Canada,North America
+5,Flaps supplier,-27.28,153.02,Boeing Aerostructures ,,Brisbane,Australia,Australia
+6,High grade metal supplier,29.12,140.3,,,,China,Asia
+7,High grade Titanium sheet supplier,30.12,110.3,,,,China,Asia
+8,Nose manufacturer,30.35,-85.28,,,,USA,North America
+9,Wing elements supplier,31.12,121.3,,Shanghai,,China,Asia
+10,Main Engine Assembly facility,32.35,-85.28,GE Aviation,Auburn,Alabama,USA,North America
+11,Fuselage frame manufacturer,41.57,-122.12,,,,USA,North America
+12,Fuselage Skin manufacturer,43.57,-122.12,,,,USA,North America
+13,Landing Gear Supplier,45.32,-73.31,Heroux Devtec,Longueuil, Quebec,Canada,North America
+14,Aircraft assembly,47.57,-122.12,Boeing Factory,Everett,Washington,USA,North America
+15,Aircraft Seats supplier,49.6,9.44,Recaro Aircraft Seating,Schwaebisch Hall,Baden-Württemberg,Germany,Europe

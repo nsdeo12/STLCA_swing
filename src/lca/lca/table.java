@@ -8,6 +8,10 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+<<<<<<< HEAD
+import javax.swing.JButton;
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 
 public class table extends JPanel {
     private boolean DEBUG = false;
@@ -51,6 +55,12 @@ public class table extends JPanel {
 
         //Add the scroll pane to this panel.
         add(scrollPane);
+<<<<<<< HEAD
+        
+        JButton btnNewButton = new JButton("New button");
+        scrollPane.setRowHeaderView(btnNewButton);
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
     }
 
     private void printDebugData(JTable table) {

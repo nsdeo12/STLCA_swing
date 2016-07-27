@@ -1,0 +1,33 @@
+Equipment_Id,Equipment_name
+1,Transportation_Rail
+2,Transportation_Truck
+3,Vacuum hose
+4,Silos
+5,Drying Tank
+6,Pump1
+7,Injection Moulding Machine
+8,Robot1
+9,Robot1
+10,Conveyor
+11,Orientor
+12,Pump2
+13,Blowing Machine
+14,Testing Machine
+15,Airwayer
+16,Palletizer
+17,Pump3
+18,"Mixer, , Pump4"
+19,Tank
+20,Pump4
+21,Tester
+22,Depalletizer
+23,Pressuizer
+24,Filling Machine
+25,Depressurizer
+26,Orientor2
+27,Capping Machine
+28,Labelling Machine
+29,Robot2
+30,Spiral Conveyor
+31,Aerial Conveyor
+32,Robot3

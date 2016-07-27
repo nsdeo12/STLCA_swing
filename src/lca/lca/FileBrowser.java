@@ -30,6 +30,11 @@ package lca;
 	import java.nio.channels.FileChannel;
 
 	import java.net.URL;
+<<<<<<< HEAD
+import java.awt.Color;
+import java.awt.Font;
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 
 	/**
 	A basic File Browser.  Requires 1.6+ for the Desktop & SwingWorker
@@ -91,7 +96,11 @@ package lca;
 
 	    /* File details. */
 	    private JLabel fileName;
+<<<<<<< HEAD
+	    static private JTextField path;
+=======
 	    private JTextField path;
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	    private JLabel date;
 	    private JLabel size;
 	    private JCheckBox readable;
@@ -104,6 +113,12 @@ package lca;
 	    private JPanel newFilePanel;
 	    private JRadioButton newTypeFile;
 	    private JTextField name;
+<<<<<<< HEAD
+	    private JButton btnCreateDirectory;
+	    private JTextField textDirName;
+	    
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 
 	    public Container getGui() {
 	        if (gui==null) {
@@ -203,9 +218,12 @@ package lca;
 
 	            JPanel flags = new JPanel(new FlowLayout(FlowLayout.LEADING,4,0));
 
+<<<<<<< HEAD
+=======
 	            isDirectory = new JRadioButton("Directory");
 	            flags.add(isDirectory);
 
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	            isFile = new JRadioButton("File");
 	            flags.add(isFile);
 	            fileDetailsValues.add(flags);
@@ -303,6 +321,41 @@ package lca;
 	            JPanel fileView = new JPanel(new BorderLayout(3,3));
 
 	            fileView.add(toolBar,BorderLayout.NORTH);
+<<<<<<< HEAD
+	            
+	            	            isDirectory = new JRadioButton("Select project Directory");
+	            	            isDirectory.addMouseListener(new MouseAdapter() {
+	            	            	@Override
+	            	            	public void mouseClicked(MouseEvent e) {
+	            	            		JOptionPane.showMessageDialog(null, "message");
+	            	            		main.projectPath.setText(path.getText());
+	            	            		main.lblDefaultPath.setText(path.getText());
+	            	            		
+	            	            	}
+	            	            });
+	            	            isDirectory.setFont(new Font("Tahoma", Font.PLAIN, 11));
+	            	            isDirectory.setForeground(Color.BLACK);
+	            	            toolBar.add(isDirectory);
+	            	            
+	            	            btnCreateDirectory = new JButton("create directory");
+	            	            btnCreateDirectory.addActionListener(new ActionListener() {
+	            	            	public void actionPerformed(ActionEvent e) {
+	            	            		String mkFolder=path.getText();
+	            	            		JOptionPane.showMessageDialog(null, mkFolder);
+	            	            		new File(mkFolder+"\\"+textDirName.getText()).mkdir();
+	            	            		main.projectPath.setText(mkFolder+"\\"+textDirName+"\\"+path.getText());
+	            	            		main.lblDefaultPath.setText(path.getText());
+	            	            	}
+	            	            });
+	            	            
+	            	            textDirName = new JTextField();
+	            	            toolBar.add(textDirName);
+	            	            textDirName.setColumns(10);
+	            	            btnCreateDirectory.setFont(new Font("Tahoma", Font.BOLD, 11));
+	            	            btnCreateDirectory.setForeground(Color.RED);
+	            	            toolBar.add(btnCreateDirectory);
+=======
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 	            fileView.add(fileMainDetails,BorderLayout.CENTER);
 
 	            detailView.add(fileView, BorderLayout.SOUTH);
@@ -490,7 +543,11 @@ package lca;
 	                } catch(Exception weTried) {
 	                }
 	                JFrame f = new JFrame(APP_TITLE);
+<<<<<<< HEAD
+	                f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);	//neelz
+=======
 	                f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+>>>>>>> 052e90c55c11f16722fa35cb2ef19c090c5b1544
 
 	                FileBrowser FileBrowser = new FileBrowser();
 	                f.setContentPane(FileBrowser.getGui());
